@@ -277,18 +277,21 @@ button,input,select,textarea{font:inherit;color:inherit}
 }
 @media(max-width:880px){
   .land{grid-template-columns:1fr}
-  /* Sign-up form leads on mobile (Netic logo + CTA upfront); brand panel follows.
-     Drop the dark-green hero background on mobile — keep it light/clean for now. */
-  .hero{position:static;height:auto;min-height:auto;padding:32px 32px 40px;background:var(--bg);color:var(--fg)}
-  .hero h1{font-size:32px}
+  /* Sign-up form leads on mobile (logo + CTA upfront); brand panel follows.
+     Light/clean — no dark-green hero, no gradient blob — and tight, top-aligned
+     spacing (no 100vh centering) so both sections fit early in the scroll. */
+  .signup{min-height:auto}
+  .signup-inner{justify-content:flex-start;padding:24px 32px;min-height:auto}
+  .signup-foot{padding:0 32px 22px}
+  .hero{position:static;height:auto;min-height:auto;padding:18px 32px 32px;background:var(--bg);color:var(--fg)}
+  .hero::before{display:none}
+  .hero h1{font-size:30px}
   .hero h1 em{color:var(--primary)}
-  .bento{margin-top:30px}
+  .bento{margin-top:18px}
   /* On mobile, show only the visibility-score card, and keep the barometer compact */
   .b-sent,.b-cit,.b-rank{display:none}
-  .b-vis{max-width:360px;margin-left:auto;margin-right:auto}
-  .gauge-wrap{max-width:240px;margin-left:auto;margin-right:auto}
-  .signup-inner{padding:40px 32px;min-height:auto}
-  .signup-foot{padding:0 32px 28px}
+  .b-vis{max-width:340px;margin-left:auto;margin-right:auto}
+  .gauge-wrap{max-width:220px;margin-left:auto;margin-right:auto}
   #signup{scroll-margin-top:12px}
 }
 @media(max-width:620px){
