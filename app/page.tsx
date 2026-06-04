@@ -104,7 +104,7 @@ function Hero() {
   return (
     <div className="hero">
       <div className="hero-content">
-        <h1>When a homeowner asks AI who to recommend, <em>are you the answer?</em></h1>
+        <h1>When a homeowner asks AI who to call, <em>do you show up?</em></h1>
 
         <a href="#signup" className="hero-cta">Request my free report <Arrow /></a>
 
