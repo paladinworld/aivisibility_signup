@@ -277,9 +277,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 }
 @media(max-width:880px){
   .land{grid-template-columns:1fr}
-  /* Sign-up form leads on mobile (Netic logo + CTA upfront); brand panel follows */
-  .hero{position:static;height:auto;min-height:auto;padding:40px 32px 44px}
+  /* Sign-up form leads on mobile (Netic logo + CTA upfront); brand panel follows.
+     Drop the dark-green hero background on mobile — keep it light/clean for now. */
+  .hero{position:static;height:auto;min-height:auto;padding:32px 32px 40px;background:var(--bg);color:var(--fg)}
   .hero h1{font-size:32px}
+  .hero h1 em{color:var(--primary)}
   .bento{margin-top:30px}
   /* On mobile, show only the visibility-score card, and keep the barometer compact */
   .b-sent,.b-cit,.b-rank{display:none}
