@@ -184,6 +184,7 @@ function Signup() {
   const [industry, setIndustry] = useState<string>("");
   const [serviceArea, setServiceArea] = useState<string>("");
   const [touched, setTouched] = useState<boolean>(false);
+  const [started, setStarted] = useState<boolean>(false);
   const [view, setView] = useState<"form" | "ok" | "wait">("form");
 
   const nameOk = firstName.trim() !== "" && lastName.trim() !== "";
@@ -271,6 +272,12 @@ function Signup() {
           <li><Check /><span>Compare your rank against local competitors</span></li>
         </ul>
 
+        {!started ? (
+          <button className="submit start-cta" onClick={() => setStarted(true)}>
+            Request my report <Arrow />
+          </button>
+        ) : (
+        <>
         <div className="steps">
           <span className="step-label">Step {stepTwo ? 2 : 1} of 2</span>
           <div className="step-bars">
@@ -370,6 +377,8 @@ function Signup() {
             Request my report <Arrow />
           </button> :
           null}
+        </>
+        )}
       </div>
     </div>
   );

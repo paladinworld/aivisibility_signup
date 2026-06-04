@@ -154,6 +154,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* submit */
 .submit{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;border:1px solid var(--primary);border-radius:var(--radius-md);background:var(--primary);color:var(--primary-fg);padding:15px 16px;font-size:15px;font-weight:600;cursor:pointer;margin-top:8px;transition:background var(--dur),border-color var(--dur)}
 .submit:hover{background:var(--primary-hover);border-color:var(--primary-hover)}
+.start-cta{margin-top:8px;padding:18px 22px;font-size:16px;box-shadow:0 8px 22px color-mix(in oklab,var(--primary) 32%,transparent)}
+.start-cta:hover{box-shadow:0 10px 26px color-mix(in oklab,var(--primary) 38%,transparent)}
 .submit svg{width:16px;height:16px}
 .backlink{display:inline-flex;align-items:center;gap:6px;border:0;background:none;color:var(--fg-muted);font-size:12px;font-weight:500;cursor:pointer;padding:14px 0 0;transition:color var(--dur)}
 .backlink:hover{color:var(--fg)}
