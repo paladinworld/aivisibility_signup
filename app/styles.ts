@@ -277,17 +277,16 @@ button,input,select,textarea{font:inherit;color:inherit}
 }
 @media(max-width:880px){
   .land{grid-template-columns:1fr}
-  /* Sign-up form leads on mobile (logo + CTA upfront); brand panel follows.
-     Light/clean — no dark-green hero, no gradient blob — and tight, top-aligned
-     spacing (no 100vh centering) so both sections fit early in the scroll. */
+  /* White form leads (logo + CTA upfront); GREEN brand panel follows below.
+     Compact, top-aligned (no 100vh centering) so both sections fit early in scroll. */
   .signup{min-height:auto}
-  .signup-inner{justify-content:flex-start;padding:24px 32px;min-height:auto}
+  .signup-inner{justify-content:flex-start;padding:24px 32px 28px;min-height:auto}
   .signup-foot{padding:0 32px 22px}
-  .hero{position:static;height:auto;min-height:auto;padding:18px 32px 32px;background:var(--bg);color:var(--fg)}
-  .hero::before{display:none}
+  /* position:relative (not static) keeps the ::before gradient INSIDE the green hero
+     instead of escaping to the viewport top — green brand background retained. */
+  .hero{position:relative;height:auto;min-height:auto;padding:30px 32px 40px}
   .hero h1{font-size:30px}
-  .hero h1 em{color:var(--primary)}
-  .bento{margin-top:18px}
+  .bento{margin-top:22px}
   /* On mobile, show only the visibility-score card, and keep the barometer compact */
   .b-sent,.b-cit,.b-rank{display:none}
   .b-vis{max-width:340px;margin-left:auto;margin-right:auto}
