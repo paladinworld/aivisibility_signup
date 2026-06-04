@@ -297,8 +297,8 @@ button,input,select,textarea{font:inherit;color:inherit}
   .bento{grid-template-columns:1fr;grid-template-areas:"vis" "sent" "cit" "rank"}
 }
 @media(max-width:560px){
-  .signup-inner,.hero{padding-left:22px;padding-right:22px}
-  .signup-foot{padding-left:22px;padding-right:22px}
+  .signup-inner,.hero{padding-left:28px;padding-right:28px}
+  .signup-foot{padding-left:28px;padding-right:28px}
   .s-head{font-size:34px}
   .hero h1{font-size:27px}
   .fld-row{grid-template-columns:1fr;gap:0;margin-bottom:0}
