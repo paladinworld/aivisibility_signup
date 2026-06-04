@@ -282,11 +282,11 @@ button,input,select,textarea{font:inherit;color:inherit}
   /* White form leads (logo + CTA upfront); GREEN brand panel follows below.
      Compact, top-aligned (no 100vh centering) so both sections fit early in scroll. */
   .signup{min-height:auto}
-  .signup-inner{justify-content:flex-start;padding:24px 32px 28px;min-height:auto}
+  .signup-inner{justify-content:flex-start;padding:24px 32px 44px;min-height:auto}
   .signup-foot{padding:0 32px 22px}
   /* position:relative (not static) keeps the ::before gradient INSIDE the green hero
      instead of escaping to the viewport top — green brand background retained. */
-  .hero{position:relative;height:auto;min-height:auto;padding:30px 32px 40px}
+  .hero{position:relative;height:auto;min-height:auto;padding:46px 32px 40px}
   .hero h1{font-size:30px}
   .bento{margin-top:22px}
   /* On mobile, show only the visibility-score card, and keep the barometer compact */
